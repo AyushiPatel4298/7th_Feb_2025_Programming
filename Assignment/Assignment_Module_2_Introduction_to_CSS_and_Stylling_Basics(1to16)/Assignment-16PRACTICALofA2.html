@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styled Image Gallery</title>
+</head>
+
+<style>
+    /* General body styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page header styling */
+.page-header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 5px solid #357ab8;
+}
+
+/* Gallery section styling */
+.gallery-section {
+  background-color: white;
+  padding: 30px;
+  margin: 0 15%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Gallery layout and image transitions */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Horizontal navigation menu */
+.horizontal-nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.horizontal-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-nav li {
+  margin: 0 15px;
+}
+
+.horizontal-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.horizontal-nav a:hover {
+  color: #ffd700;
+}
+
+/* Vertical navigation sidebar */
+.vertical-nav {
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.vertical-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vertical-nav li {
+  margin-bottom: 10px;
+}
+
+.vertical-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.vertical-nav a:hover {
+  color: #4a90e2;
+}
+
+</style>
+<body>
+  <nav class="horizontal-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>Interactive Image Gallery</h1>
+  </header>
+
+  <section class="gallery-section">
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200" alt="Placeholder 1" />
+      <img src="https://via.placeholder.com/200" alt="Placeholder 2" />
+      <img src="https://via.placeholder.com/200" alt="Placeholder 3" />
+    </div>
+  </section>
+
+  <aside class="vertical-nav">
+    <ul>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </aside>
+</body>
+</html>

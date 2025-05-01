@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Image Gallery</title>
+</head>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+</style>
+
+<body>
+
+  <h1>Interactive Image Gallery</h1>
+      <div class="gallery">
+        <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Headphone.jpg" alt="Placeholder 1" />
+        <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Headphone.jpg" alt="Placeholder 2" />
+        <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Headphone.jpg" alt="Placeholder 3" />
+      </div>
+</body>
+
+</html>

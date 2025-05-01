@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+Objective: Practice working with images and structuring an image gallery layout.
+ Instructions:
+ 1. Createan HTML page titled “My Gallery.”
+ 2. Add a heading that says “My Image Gallery.”
+ 3. Insert at least six images into the gallery, each with an alt attribute.
+ 4. Use a table or an unordered list to arrange the images into a 2x3 grid layout.
+ Practical Assignments
+ 1. Createa basic HTML webpage that includes:
+ o A header,main content, and footer section.
+ o Atleast three headings, paragraphs, a list, and an image.
+ 2. Build a simple form with fields for name, email, and a submit button.
+-->
+
+<style>
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #333;
+    }
+
+</style>
+
+</head>
+<body>
+
+<h1>My Image Gallery</h1>
+
+<div class="gallery">
+    <img src="/Assignment/Assignment_Module_1_Introduction_to_Basics_of_WebDesigning_&_HTML(1to12)/AS-image1.jpg" alt="Image 1">
+    <img src="/Assignment/Assignment_Module_1_Introduction_to_Basics_of_WebDesigning_&_HTML(1to12)/AS-image2.jpg" alt="Image 2">
+    <img src="/Assignment/Assignment_Module_1_Introduction_to_Basics_of_WebDesigning_&_HTML(1to12)/AS-image3.jpg" alt="Image 3">
+    <img src="/Assignment/Assignment_Module_1_Introduction_to_Basics_of_WebDesigning_&_HTML(1to12)/AS-image5.jpg" alt="Image 4">
+    <img src="/Assignment/Assignment_Module_1_Introduction_to_Basics_of_WebDesigning_&_HTML(1to12)/AS-image5.jpg" alt="Image 5">
+    <img src="/Assignment/Assignment_Module_1_Introduction_to_Basics_of_WebDesigning_&_HTML(1to12)/AS-image6.jpg" alt="Image 6">
+</div>
+    
+</body>
+</html>

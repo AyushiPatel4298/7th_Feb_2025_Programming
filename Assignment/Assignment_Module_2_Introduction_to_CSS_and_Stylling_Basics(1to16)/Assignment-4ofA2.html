@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styling Lists</title>
+  
+</head>
+
+<!--
+Objective: Practice customizing list styles.
+ Instructions:
+ 1. Create an HTML page with both an ordered list and an unordered list.
+ 2. In your CSS file:
+ o Remove default list markers using list-style-type: none.
+ o Customize each list by adding a custom marker or symbol.
+ o Change the font color and style for list items.
+-->
+
+<style>
+/* General style*/
+.custom-ol,
+.custom-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Ordered List */
+.custom-ol li {
+  position: relative;
+  padding-left: 25px;
+  font-family: 'Georgia';
+  color: darkred;
+  margin-bottom: 10px;
+}
+
+/* Unordered List */
+.custom-ul li {
+  position: relative;
+  padding-left: 25px;
+  font-family: 'Arial';
+  color: green;
+  margin-bottom: 8px;
+}
+
+
+
+</style>
+
+<body>
+  <h1>Custom List Styling</h1>
+
+  <h2>Ordered List</h2>
+  <ol class="custom-ol">
+    <li>Learn HTML</li>
+    <li>Practice CSS</li>
+    <li>Explore JavaScript</li>
+  </ol>
+
+  <h2>Unordered List</h2>
+  <ul class="custom-ul">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+</body>
+</html>

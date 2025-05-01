@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Borders and Shadows</title>
+</head>
+
+<!--
+ Assignment 3: Working with Borders and Shadows
+  Objective: Learn how to use borders, rounded corners, and shadows.
+ Instructions:
+ 1. Create a simple HTML page with a card-like structure.
+ 2. Add CSS to style the card:
+ o Add a border with a color,style, and width of your choice.
+ o Round the corners using border-radius.
+ o Apply a box shadow to give it a raised look.
+-->
+
+<style>
+
+    body{
+        display:flex;
+        background-color:#808080;
+        justify-content:center;
+        align-items:center;    
+    }
+
+    .card{
+        width:400px;
+        height:auto;
+        background-color:#811331;
+        color: #d5cbec;
+        padding:200px;
+        border:1px dotted #d5cbec;
+        border-radius:5px;
+        box-shadow:0 20px 20px 0 white;
+        justify-content:center;
+        text-align:justify;
+    }
+    
+    h3{
+        text-align:center;
+        font-weight:bolder;
+    }
+
+</style>
+
+<body>
+    <div class="card">
+        <h3>This is card heading</h3>
+        <p>Instructions of this assignment.
+            1. Create a simple HTML page with a card-like structure.
+            2. Add CSS to style the card:
+            o Add a border with a color,style, and width of your choice.
+            o Round the corners using border-radius.
+            o Apply a box shadow to give it a raised look.</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Backgrounds and Colors</title>
+</head>
+
+<!--
+ Assignment 2: Adding Backgrounds and Colors
+  Objective: Practice using colors and background properties.
+ Instructions:
+ 1. Create an HTML page with three sections (<div> elements) labeled “Introduction,”
+ “Content,” and “Footer.”
+ 2. Apply CSS to:
+ o Give each section a different background color (use HEX or RGB values).
+ o Add padding and set a specific width for each section.
+ o Use a gradient background for the “Introduction” section.
+ o Set a light gray background color for the entire webpage.
+-->
+
+<style>
+
+    body{
+        backgroud-color:#D3D3D3;
+        text-align:center;
+    }
+
+    .introduction{
+        width:100%;
+        height:auto;
+        background-image: linear-gradient(to bottom right,blue,green,red);
+        padding:20px;
+        
+    }
+
+    .content{
+        width:100%;
+        height:auto;
+        background-color:#F88379;
+        color:#79F8E8;
+        padding:20px;
+        text-align:justify;
+    }
+
+    .footer{
+        width:100%;
+        height:auto;
+        background-color:#000000;
+        color:#ffffff;
+        padding:20px;
+    
+    }
+
+</style>
+
+<body>
+    <!--This is Introduction section-->
+    <section>
+        <div class="introduction">
+            INTRODUCTION
+        </div>
+    </section>
+
+    <!--This is Content section-->
+    <section>
+        <div class="content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </section>
+
+    <!--This is Footer section-->
+    <section>
+        <div class="footer">
+            This is Footer
+        </div>
+    </section>
+    
+</body>
+</html>

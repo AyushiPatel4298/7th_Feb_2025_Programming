@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech News</title>
+</head>
+<!--
+  Objective: Learn and practice using semantic HTML elements.
+ Instructions:
+ 1. Create an HTML file with the title “Tech News.”
+ 2. Use the following HTML5 semantic tags to structure the page:
+ o Header:Title of the website.
+ o Nav:Links to “Home,” “Latest News,” and “Contact.”
+ o Main:A section with a few news articles.
+  Each article should use the <article> tag, with headings and short
+ descriptions.
+ o Footer:Addcontact information in the footer.
+-->
+<style>
+    .row{
+        display:flex;
+    }
+    header{
+        width:100%;
+        height:40px;
+        background-color:#FAD5A5;
+        color:#8A496B;
+        font-weight:bold;
+        text-align:center;
+    }
+    .body{
+        Background-color:#ffebee;
+    }
+    .nav{
+        width:100%;
+        height:20px;
+        background-color:#F0f8ff;
+        color:#03045E;
+        text-align:center;
+       
+    }
+    .ul{
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+    }
+    ul li{
+        display:inline-block;
+        white-space: pre-wrap;        
+    }
+
+    .mainbar{
+
+    }
+    footer{
+        width:100%;
+        height:100px;
+        Background-color:black;
+        color:white;
+    }
+    .footer ul li{
+        display:block;
+    }
+</style>
+
+<body class="body">
+    <header class="header">
+        Bharat news
+    </header>
+
+    <nav class="nav">
+        <ul class="ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Latest news">Latest News</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h4>IT field news</h4>
+            <p>India's IT sector is facing pricing pressure due to uncertain demand and the adoption of AI technologies. Companies are leveraging automation and tier-2 locations to maintain profitability amid changing client expectations. Additionally, Reliance Jio has expressed interest in investing in Tripura's IT sector, including data centers and other projects</p>
+        </article>
+        <article>
+            <h4>IT field news</h4>
+            <p>India's IT sector is facing pricing pressure due to uncertain demand and the adoption of AI technologies. Companies are leveraging automation and tier-2 locations to maintain profitability amid changing client expectations. Additionally, Reliance Jio has expressed interest in investing in Tripura's IT sector, including data centers and other projects</p>
+        </article>
+        <article>
+            <h4>IT field news</h4>
+            <p>India's IT sector is facing pricing pressure due to uncertain demand and the adoption of AI technologies. Companies are leveraging automation and tier-2 locations to maintain profitability amid changing client expectations. Additionally, Reliance Jio has expressed interest in investing in Tripura's IT sector, including data centers and other projects</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <ul>
+            <li>Contact Information:</li>
+            <li>Phone no: +91 11111 22222</li>
+            <li>Add : Maninagr, Ahmedabad, Gujarat.</li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

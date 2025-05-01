@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header, footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive styles */
+    @media (min-width: 768px) {
+      .content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      section {
+        font-size: 1.1rem;
+        padding: 25px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      section {
+        font-size: 1.2rem;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Responsive Layout</h1>
+    </header>
+
+    <div class="content">
+      <section>
+        <h2>Section One</h2>
+        <p>This is the first section. </p>
+      </section>
+      <section>
+        <h2>Section Two</h2>
+        <p>This is the second section. </p>
+      </section>
+      <section>
+        <h2>Section Three</h2>
+        <p>This is the third section.</p>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 this is copyright</p>
+    </footer>
+  </div>
+
+</body>
+</html>

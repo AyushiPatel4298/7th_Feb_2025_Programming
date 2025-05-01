@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore New York City</title>
+</head>
+<!--
+ Objective: Practice embedding media and external content.
+ Instructions:
+ 1. Create an HTML page with the title “Explore New York City.”
+ 2. Add a paragraph with a short description of New York City.
+ 3. Embeda Google Maps view of New York City using the<iframe> tag.
+ 4. Embed a YouTube video about NewYork City.
+-->
+ <style>
+    .row{
+        display:felx;
+        
+    }
+
+    .h2{
+        background-color:#ffa500;
+        color:#0000ff;
+        text-transform: capitalize;
+        text-align:center;
+    }
+
+    .p{
+        background-color:#f4f4f4;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .div{
+        width:50%;
+        height:500px;
+        float:left;
+    }
+</style>
+
+<body>
+    <h2 class="h2">Welcome to New York city</h2>
+    <p class="p">
+        New York, often called New York City (NYC), is the most populous city in the United States. It is at the southern 
+    end of the U.S. state of New York. Over 8 million people currently live in the city, and over 22 million people live in the
+    bigger New York metropolitan area. It is the financial capital of the U.S. because it is home to the nation's stock
+    market, Wall Street, and the One World Trade Center.
+    <br>
+    New York City is on one of the world's largest natural harbors. It is made up of five boroughs, each of which is a
+    county of the state of New York.The five boroughs—Brooklyn, Queens, Manhattan, the Bronx, and Staten Island—were
+    combined into one city in 1898.The city and its metropolitan area are an important place for legal immigration to
+    the United States. As many as 800 languages are spoken in New York, making it the most linguistically diverse city
+    in the world. New York has more than 3.2 million people born outside the United States, the biggest foreign-born
+    population of any city in the world as of 2016.</p>
+    <div class="row">
+        <div class="div">
+            <h3 align="center">Map of New York City</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387196.07690429175!2d-74.30916462228348!3d40.696672653307544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1743071061533!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="div">
+            <h3 align="center">Video of New York City</h3>
+            <iframe src="https://www.youtube.com/embed/JnMc0gwbRYA?si=dzA5_5KVXz8YIBfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen auto></iframe>
+        </div>
+    </div>
+
+</body>
+</html>

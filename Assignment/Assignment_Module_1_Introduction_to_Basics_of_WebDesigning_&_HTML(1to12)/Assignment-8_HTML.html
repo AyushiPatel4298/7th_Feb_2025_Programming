@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<!--
+ Objective: Practice linking between pages and organizing content across multiple pages.
+ Instructions:
+ 1. Createa simple 3-page website with the following structure:
+ o Home:Welcome message and a brief introduction about the website.
+ o AboutMe:A paragraph about yourself and an image.
+ o Portfolio: List of your projects or hobbies with descriptions.
+ 2. Ensure each page has a link to the other two pages using <a> tags.
+ 3. Include a heading on each page to identify it (e.g., “Welcome to My Homepage”)
+--> 
+    <style>
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            text-align:center;
+        }
+
+        ul li{
+            display:inline;
+            text-decoration:none;       
+            color:#000000;
+            padding:10px 10px;
+        }
+        .h2{
+            background-color:#8a2be2;
+            color:#Ffff00;
+            text-align: center;
+        }
+    </style>
+<body>
+
+    <ul class="ul">
+        <h2 class="h2">Welcome to my Home Page</h2>
+        <li>
+            <a href="http://127.0.0.1:5500/Assignment/Assignment_Module_1_Introduction_to_Basics_of_WebDesigning_&_HTML(1to12)/Home.html" class="li" target="_blank">Home</a></li>
+        <li>
+            <a href="http://127.0.0.1:5500/Assignment/Assignment_Module_1_Introduction_to_Basics_of_WebDesigning_&_HTML(1to12)/about_me.html" class="li" target="_blank">AboutMe</a></li>
+        <li>
+            <a href="http://127.0.0.1:5500/Assignment/Assignment_Module_1_Introduction_to_Basics_of_WebDesigning_&_HTML(1to12)/portfolio.html" class="li" target="_blank">Portfolio</a></li>
+    </ul>    
+
+</body>
+</html>

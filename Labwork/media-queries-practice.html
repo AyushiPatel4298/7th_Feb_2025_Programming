@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+[class*="col-"]{width:100%}
+
+@media only screen and (min-width:600px){
+    .col-t-1{width:8.33%}
+    .col-t-2{width:16.66%}
+    .col-t-3{width:25%}
+    .col-t-4{width:33.33%}
+    .col-t-5{width:41.66%}
+    .col-t-6{width:50%}
+    .col-t-7{width:58.33%}
+    .col-t-8{width:66.66%}
+    .col-t-9{width:75%}
+    .col-t-10{width:83.33%}
+    .col-t-11{width:91.66%}
+    .col-t-12{width:100%}
+}
+
+@media only screen and (min-width:768px){
+    .col-1{width:8.33%}
+    .col-2{width:16.66%}
+    .col-3{width:25%}
+    .col-4{width:33.33%}
+    .col-5{width:41.66%}
+    .col-6{width:50%}
+    .col-7{width:58.33%}
+    .col-8{width:66.66%}
+    .col-9{width:75%}
+    .col-10{width:83.33%}
+    .col-11{width:91.66%}
+    .col-12{width:100%}
+}
+
+</style>
+
+<body>
+
+<!--This is header section-->
+
+    <div class="row">
+        <div class="col-12 col-t-12" style="background-color: blanchedalmond;">
+            <h3 align="center">This is Header</h3>
+        </div>
+    </div>
+
+<!--This is nav bar-->
+    <div class="row">
+        <div class="col-12 col-t-12" style="background-color:aquamarine">
+            <h3 align="center">This is nav bar</h3>
+        </div>
+    </div>
+
+<!--This is main bar with side bar-->
+    <div class="row">
+        <div class="col-2" style="background-color: rgb(121, 91, 47);">
+            <h3 align="center">This is side bar 1</h3>
+        </div>
+        <div class="col-7" style="background-color: rgb(63, 86, 156);">
+            <h3 align="center">This is main bar</h3>
+                <div class="row">
+                    <div style="backgroud-color:yellow;" class="col-6" >
+                        <h6>Hello</h6>
+                    </div>
+                    <div style="backgroud-color:rgb(179, 19, 19);" class="col-6">
+                        <h6>Hello</h6>
+                    </div>
+                </div>
+                <h1>Mainbar</h1>
+                <h1>Mainbar</h1>
+                <h1>Mainbar</h1>
+                <h1>Mainbar</h1>
+        </div>
+        <div class="col-3" style="background-color: rgb(121, 91, 47);">
+            <h3 align="center">This is side bar 2</h3>
+        </div>
+    </div>
+    
+<!--This is Footer section-->
+    <div class="row">
+        <div class="col-12" style="background-color:black; color:white; padding:20px">
+            <h4 align="center">This is footer</h4>
+        </div>
+    </div>
+  
+</body>
+</html>

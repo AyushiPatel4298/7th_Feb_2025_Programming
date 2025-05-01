@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Variables Theme</title>
+</head>
+
+<style>
+    /* Define CSS variables in the root */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #f1f1f1;
+  --text-color: #333;
+  --border-color: #ccc;
+}
+
+/* Base styles using variables */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  padding: 30px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+/* Headings */
+h1, h2 {
+  margin-top: 0;
+}
+
+</style>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <main>
+    <h2>Welcome!</h2>
+    <p>This is a simple page.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Site</p>
+  </footer>
+
+</body>
+</html>

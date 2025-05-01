@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive CSS Grid Gallery</title>
+</head>
+
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+      background: #f4f4f4;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+      max-width: 900px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 400px;
+      display: block;
+      border-radius: 8px;
+    }
+
+    /* Responsive: 2x3 layout for small screens */
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+
+<body>
+
+  <div class="gallery">
+    <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Own_Photo.jpg" alt="Image 1" />
+    <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Own_Photo.jpg" alt="Image 2" />
+    <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Own_Photo.jpg" alt="Image 3" />
+    <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Own_Photo.jpg" alt="Image 4" />
+    <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Own_Photo.jpg" alt="Image 5" />
+    <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Own_Photo.jpg" alt="Image 6" />
+  </div>
+
+</body>
+</html>

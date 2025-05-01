@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Simple HTML Form</title>
+</head>
+<!---
+     Instructions:
+ 1. Create an HTML page with the title “Contact Me.”
+ 2. Inside the <body>:
+ o Add a form with the following input fields:
+  Name(textinput)
+  Email(emailinput)
+  Message(textarea)
+  Asubmitbutton
+ 3. Makesureeachfield has a label using the <label> tag for accessibility
+    --->
+
+<body>
+    
+    <fieldset align="center">
+        <legend>Contact Me</legend>
+        <form method="post">
+            <label>Name</label>
+            <input type="text" name="name"> <br>
+            <br>
+            
+            <label>Email</label>
+            <input type="email" name="email"> <br>
+            <br>
+
+            <label>Message</label>
+            <textarea type="text" rows="3" cols="20" name="message"></textarea><br>
+            <br>
+
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>

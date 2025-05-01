@@ -1,0 +1,7 @@
+1. text properies
+1.1 fonts and text
+2. box
+3. float
+4. flex
+5. layout creation using today's session.
+practice : make a layout for your self.

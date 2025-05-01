@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Animation Example</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #f4f4f4;
+      overflow: hidden;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      border-radius: 10px;
+      animation: moveBox 4s linear infinite;
+    }
+
+    @keyframes moveBox {
+      0% {
+        transform: translateX(0);
+        background-color: #3498db;
+      }
+      50% {
+        transform: translateX(80vw);
+        background-color: #e91e63;
+      }
+      100% {
+        transform: translateX(0);
+        background-color: #3498db;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box"></div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Product Card</title>
+  
+</head>
+
+<style>
+    /* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: Scale + Shadow */
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Info Section */
+.product-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title */
+.product-title {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* Description */
+.product-description {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Price */
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+</style>
+
+<body>
+
+  <div class="product-card">
+    <img src="/Assignment/Assignment_Module_2_Introduction_to_CSS_and_Stylling_Basics(1to16)/Headphone.jpg" alt="Product" class="product-image" />
+    <div class="product-info">
+      <h2 class="product-title">Stylish Headphones</h2>
+      <p class="product-description">Experience high-quality sound with a sleek design.</p>
+      <p class="product-price">$89.99</p>
+    </div>
+  </div>
+
+</body>
+</html>

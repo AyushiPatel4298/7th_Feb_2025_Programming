@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Creating a Simple Navigation Bar</title>
+</head>
+
+
+<style>
+
+body{
+    background-color:aliceblue;
+}
+
+.navbar {
+  text-align: center;
+}
+
+/* each navigation link */
+.nav-link {
+  display: inline-block;          /* Makes links horizontal */
+  padding: 10px 20px;             /* Adds space around each link */
+  background-color: #3498db;      /* Background color */
+  color: white;                   /* Text color */
+  text-decoration: none;          /* Removes underline */
+  margin: 0 10px;                 /* Spacing between links */
+  border-radius: 5px;             /* Optional: rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: #2980b9;
+  color: #ffd700;                 /* Change text color on hover */
+}
+</style>
+
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">About</a>
+    <a href="#" class="nav-link">Services</a>
+    <a href="#" class="nav-link">Contact</a>
+  </nav>
+
+</body>
+</html>

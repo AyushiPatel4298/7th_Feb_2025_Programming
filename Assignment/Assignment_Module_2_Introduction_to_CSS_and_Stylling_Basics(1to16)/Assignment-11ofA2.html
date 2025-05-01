@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pseudo-Classes and Pseudo-Elements</title>
+  
+</head>
+
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Pseudo-element: Decorative ::before on headings */
+h1::before {
+  content: "★ ";
+  color: #ff9800;
+  font-size: 1.2em;
+}
+
+/* Pseudo-element: Style only the first line of paragraph */
+p::first-line {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Pseudo-classes: Link states */
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:visited {
+  color: #6c757d;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+a:active {
+  color: #dc3545;
+}
+
+</style>
+
+<body>
+
+  <h1>Welcome to My Page</h1>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nulla sed lorem luctus
+    fermentum. Vivamus consequat urna at sapien bibendum, sit amet blandit purus accumsan.
+  </p>
+
+  <nav>
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact</a>
+  </nav>
+
+</body>
+</html>
