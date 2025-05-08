@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Task</title>
+<style>
+    body{
+        justify-content:center ;
+        text-align: center;
+    }
+    
+</style>
+</head>
+<body>
+    <h2>Final Result</h2>
+    <br>
+    <form method="post" class="">
+        <div>
+            <label>English Marks:</label>
+            <input type="text" Id="English" placeholder="Enter English Marks" required min="0" max="100" name="English"><br>
+        </div>
+        <br>
+        <div>
+            <label>Hindi Marks:</label>
+            <input type="text" Id="Hindi " placeholder="Enter Hindi Marks" required min="0" max="100" name="Hindi"><br>
+        </div>
+        <br>
+        <div>
+        <label>Gujarti Marks:</label>
+        <input type="text" Id="Gujarati" placeholder="Enter Gujarati Marks" required min="0" max="100" name="Gujarati"><br>
+        </div>
+        <br>
+        <button>Submit</button>
+    </form>
+
+    <h3>Result total is =</h3>
+    <h3>Result Percentage is =</h3>
+    <h3>Result total grade is =</h3>
+    <script>
+        function result()
+        {
+            var english=document.getElemntById('english').value;
+            var hindi=document.getElementById('hindi').value;
+            var gujarati=document.getElementById('gujarati').value;
+        }
+    </script>
+</body>
+</html>
