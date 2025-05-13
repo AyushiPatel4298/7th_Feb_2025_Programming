@@ -9,12 +9,14 @@
         justify-content:center ;
         text-align: center;
     }
-    
+
 </style>
 </head>
 <body>
     <h2>Final Result</h2>
     <br>
+    <fieldset>
+    <legend>Final Result</legend>
     <form method="post" class="">
         <div>
             <label>English Marks:</label>
@@ -33,16 +35,45 @@
         <br>
         <button>Submit</button>
     </form>
+    </fieldset>
 
-    <h3>Result total is =</h3>
-    <h3>Result Percentage is =</h3>
-    <h3>Result total grade is =</h3>
+    <h3 id="total"></h3>
+    <h3 id="per"></h3>
+    <h3 id="grade"></h3>
     <script>
         function result()
         {
-            var english=document.getElemntById('english').value;
-            var hindi=document.getElementById('hindi').value;
-            var gujarati=document.getElementById('gujarati').value;
+            var english=document.getElemntById('English').value;
+            var hindi=document.getElementById('Hindi').value;
+            var gujarati=document.getElementById('Gujarati').value;
+
+            var total=+english + +hindi + +gujarati;
+		document.getElementById('total').innerText="Total is :" + total;
+				
+		var per=(total*100)/300;
+		document.getElementById('per').innerText="Per is :" + per +"%";
+		
+		if(per>90)
+		{
+			document.getElementById('grade').innerText="Grade is : A ";
+			document.getElementById('grade').style.color="green";
+		}
+		else if(per>70)
+		{
+			document.getElementById('grade').innerText="Grade is : B ";
+			document.getElementById('grade').style.color="green";
+		}
+		else if(per>50)
+		{
+			document.getElementById('grade').innerText="Grade is : C ";
+			document.getElementById('grade').style.color="green";
+		}
+		else
+		{
+			document.getElementById('grade').innerText="Grade is : Fail ";
+			document.getElementById('grade').style.color="red";
+		}
+		return false;
         }
     </script>
 </body>
