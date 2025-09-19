@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Registration - Swan Solution Pvt Ltd</title>
+    <link rel="stylesheet" type="text/css" href="/Assessment/Assessment-3_Wd_Framework/Style.css">
+    
+</head>
+<body>
+    <main>
+        <legend><h1>GUEST REGISTRATION</h1></legend>
+            <form>
+                <div class="row">
+                    <label>Full name</label>
+                    <input id="fullname" name="fullname" type="text" Placeholder="Enter full name" required>
+                    <small class="error" id="err-fullName"></small>
+                </div>
+                <div class="row"></div>
+                    <label>Phone Number</label>
+                    <input id="Phonenumber" name="Phonenumber" type="tel" Placeholder="10-digit phone number" required>
+                    <small class="error" id="err-phone"></small>
+                </div>
+                <div class="row">
+                    <label>Email address</label>
+                    <input id="email" name="email" type="email" Placeholder="name@example.com" required>
+                    <small class="error" id="err-email"></small>
+                </div>
+                <div class="row">
+                    <label>Aadhar Card number</label>
+                    <input id="aadhar" name="aadhar" placeholder="12-digit aadhar" required>
+                    <small class="error" id="err-aadhar"></small>
+                </div>
+                <div class="row">
+                    <label>Check In date</label>
+                    <input id="checkin" name="checkin" type="date" required>
+                    <small class="error" id="err-checkin"></small>
+                </div>
+                <div class="row">
+                    <label>Check Out date</label>
+                    <input id="checkout" name="checkout" type="date" required>
+                    <small class="error" id="err-checkout"></small>
+                </div>
+                <div class="row">
+                    <label>Purpose Of Visit</label>
+                    <input id="purpose" name="purpose" placeholder="Business, leisure, etc.." required>
+                    <small class="error" id="err-purpose"></small>
+                </div>
+                <div class="buttons">
+                    <button type="submit" id="submitBtn">Submit</button>
+                    <button type="reset" id="resetBtn">Reset</button>
+                    <a class="view-link" href="veiw.html">View Submissions</a>
+                </div>
+                <div id="msg" class="message" area-live="polite"></div>
+
+            </form>
+    </main>
+    <script src="/Assessment/Assessment-3_Wd_Framework/MyScript.js"></script>
+</body>
+</html>
